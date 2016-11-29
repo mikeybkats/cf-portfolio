@@ -1,0 +1,17 @@
+.text-box {
+    margin: 10vw;
+}
+
+.hero-image {
+    background-color: blue;
+    width: 100vw;
+    height: 40vh;
+    margin-top: -10vw;
+}
+
+.image-box {
+    background-color: blue;
+    margin: 10vw;
+    width: 80vw;
+    height: 40vh;
+}
