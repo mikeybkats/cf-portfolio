@@ -10,7 +10,7 @@
 }
 
 .image-box {
-    background-color: blue;
+    background-color: gray;
     margin: 10vw;
     width: 80vw;
     height: 45vh;
@@ -21,7 +21,7 @@
 }
 
 .image-box.contact {
-    background-color: blue;
+    background-color: gray;
     margin: 10vw;
     width: 80vw;
     height: 15vh;
@@ -40,6 +40,7 @@ li.social-item {
   list-style: none;
   display: flex;
   justify-content: space-around;
+  font-size: 2em;
 }
 
 .image-box h2 {
