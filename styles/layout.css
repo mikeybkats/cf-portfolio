@@ -2,16 +2,41 @@
     margin: 10vw;
 }
 
-.hero-image {
+.title-background {
     background-color: blue;
     width: 100vw;
-    height: 40vh;
-    margin-top: -10vw;
+    height: 60px;
+    margin-top: 0px;
 }
 
 .image-box {
     background-color: blue;
     margin: 10vw;
     width: 80vw;
-    height: 40vh;
+    height: 45vh;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+ul.social-nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+li.social-item {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+.image-box h2 {
+  color: white;
+}
+
+h3.page-title {
+  color: white;
+  float: right;
+  margin-right: 5%;
 }
