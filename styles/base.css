@@ -1,3 +1,7 @@
+footer {
+  background-color: white;
+}
+
 ul, menu, dir {
     display: block;
     list-style-type: disc;
@@ -13,7 +17,7 @@ li {
 }
 
 a {
-  color: blue;
+  color: gray;
 }
 
 h1 {

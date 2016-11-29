@@ -20,6 +20,17 @@
     justify-content: center;
 }
 
+.image-box.contact {
+    background-color: blue;
+    margin: 10vw;
+    width: 80vw;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
 ul.social-nav {
   display: flex;
   justify-content: space-around;
@@ -33,6 +44,12 @@ li.social-item {
 
 .image-box h2 {
   color: white;
+  width: 250px;
+  text-align: center;
+}
+
+.contact-section {
+  padding-bottom: 40px;
 }
 
 h3.page-title {
