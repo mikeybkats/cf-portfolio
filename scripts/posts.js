@@ -1,5 +1,12 @@
 var blogPosts = [
   {
+    title: 'how to go from craftsman to developer',
+    datePublished: '2016-11-30',
+    author: 'michael barakat',
+    body: '<img src=""/><p>As a lifelong craftsperson and product maker (one who is deeply rooted in the physical world) I have always had a complicated relationship with technology. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>'
+  },
+  
+  {
     title: 'how to make a pair of shoes',
     datePublished: '2016-11-26',
     author: 'michael barakat',

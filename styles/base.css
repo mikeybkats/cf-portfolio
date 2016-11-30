@@ -1,20 +1,50 @@
+section {
+}
+
+footer {
+  background-color: white;
+}
+
 ul, menu, dir {
-    display: block;
-    list-style-type: disc;
-    -webkit-margin-before: 0em;
-    -webkit-margin-after: 0em;
-    -webkit-margin-start: 0px;
-    -webkit-margin-end: 0px;
-    -webkit-padding-start: 0px;
+  display: block;
+  list-style-type: disc;
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  -webkit-padding-start: 0px;
+}
+
+ul.social-nav {
+  display: flex;
+  justify-content: space-around;
+  margin: 5vh 0 5vh 0;  
 }
 
 li {
   list-style: none;
 }
 
+li.social-item {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  font-size: 2em;
+}
+
+/* --------------LINK STYLES------------- */
+
 a {
-  color: gray;
   text-decoration: none;
+}
+
+.social-item a{
+  color: gray;
+}
+
+/* -------------TEXT STYLES-------------- */
+
+p {
 }
 
 h1 {
@@ -27,9 +57,8 @@ h2{
 h3 {
 }
 
-section {
-}
-
-footer {
-  background-color: white;
+h3.page-title {
+  color: white;
+  float: right;
+  margin-right: 5%;
 }

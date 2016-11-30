@@ -1,52 +1,43 @@
-.title-background {
-  background-color: blue;
-  width: 100vw;
-  height: 60px;
-  margin-top: 0px;
+.template {
+  display: none;
 }
 
+/* ----------IMAGES / BOXES---------- */
+
 .text-box {
-    margin: 10vw;
+  margin: 5vh 10vw 5vh 10vw;
 }
 
 .text-box.posts{
-    background-color: #EBEBEC;
-    padding: 15px;
-    margin-top: 0px;
+  background-color: #EBEBEC;
+  padding: 15px;
+  margin-top: 0px;
 }
 
 .image-box {
-    background-color: gray;
-    margin: 10vw;
-    width: 80vw;
-    height: 45vh;
-    display: flex;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
+  background-color: gray;
+  margin: 5vh 10vw 5vh 10vw;
+  width: 80vw;
+  height: 45vh;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
 }
 
 .image-box.contact {
-    background-color: gray;
-    margin: 10vw;
-    width: 80vw;
-    height: 15vh;
-    display: flex;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
+  background-color: gray;
+  margin: 0vh 10vw 0vh 10vw;
+  width: 80vw;
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
 }
 
-ul.social-nav {
-  display: flex;
-  justify-content: space-around;
-}
-
-li.social-item {
-  list-style: none;
-  display: flex;
-  justify-content: space-around;
-  font-size: 2em;
+.contact-section .text-box {
+  margin: 0vh 10vw 0vh 10vw;
 }
 
 .image-box h2 {
@@ -59,21 +50,24 @@ li.social-item {
     margin-bottom: 0px;
 }
 
+/* ---------SECTIONS AND DIVS----------*/
+
+.title-background {
+  background-color: blue;
+  width: 100vw;
+  height: 60px;
+  margin-top: 0px;
+}
+
 .contact-section {
   padding-bottom: 40px;
-}
-
-h3.page-title {
-  color: white;
-  float: right;
-  margin-right: 5%;
-}
-
-.template {
-  display: none;
 }
 
 .posts {
   margin-top: 60px;
   margin-bottom: 60px;
+}
+
+.contact-info {
+    line-height: 0px;
 }
