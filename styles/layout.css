@@ -63,3 +63,7 @@ h3.page-title {
   float: right;
   margin-right: 5%;
 }
+
+.template {
+  display: none;
+}
