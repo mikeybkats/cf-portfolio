@@ -2,6 +2,11 @@
     margin: 10vw;
 }
 
+.text-box.posts{
+    background-color: #EBEBEC;
+    padding: 15px;
+}
+
 .title-background {
     background-color: blue;
     width: 100vw;
