@@ -18,7 +18,7 @@ ul, menu, dir {
 ul.social-nav {
   display: flex;
   justify-content: space-around;
-  margin: 5vh 0 5vh 0;  
+  margin: 5vh 0 5vh 0;
 }
 
 li {
@@ -51,7 +51,9 @@ h1 {
   line-height: 0px;
 }
 
-h2{
+header h1 {
+    max-width: 100%;
+    line-height: 20px;
 }
 
 h3 {

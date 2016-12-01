@@ -30,6 +30,9 @@ blogPosts.forEach(function(blogPostObj){
   posts.push(new Post(blogPostObj));
 });
 
+// append posts to DOM
+// cycles through all the posts (which have just been pushed to the posts[], and for each it passes them through to line 36
 posts.forEach(function(blogPostObj) {
+  // select post by id (which has been aggregated by the clone() method on each item in the posts[],
   $('#posts').append(blogPostObj.toHtml());
 });
