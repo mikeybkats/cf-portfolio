@@ -12,100 +12,99 @@
   </head>
 
   <body>
-    <!-- <header> -->
-      <nav>
-        <!-- <h4>BARAKAT'S PORTFOLIO</h4> -->
+      <nav class="main-nav">
         <ul class="navigation">
-          <li class="nav-item"><a href="#about">ABOUT</a></li>
-          <li class="nav-item"><a href="#work">WORK</a></li>
-          <li class="nav-item"><a href="#blog">BLOG</a></li>
-          <li class="nav-item"><a href="#contact">CONTACT</a></li>
+          <li class="nav-item" data-spec=""><a href=".">HOME</a></li>
+          <li class="nav-item" data-spec="about"><a href="#about">ABOUT</a></li>
+          <li class="nav-item" data-spec="work"><a href="#work">WORK</a></li>
+          <li class="nav-item" data-spec="blog"><a href="#blog">BLOG</a></li>
+          <li class="nav-item" data-spec="contact"><a href="#contact">CONTACT</a></li>
         </ul>
       </nav>
 
       <input type="checkbox" id="nav-trigger" class="nav-trigger" />
       <label for="nav-trigger"></label>
-    <!-- </header> -->
-<div class="site-wrap">
-    <main>
-      <section class="title-section">
-        <div class="title-background">
-          <h3 class="page-title">hello deary</h3>
+
+    <div class="site-wrap">
+      <main>
+        <section class="title-section">
+          <div class="title-background">
+            <h3 class="page-title">hello deary</h3>
+          </div>
+        </section>
+
+        <section class="page-content about-section" id="about">
+          <div class="image-box">
+            <h2>Michael Barakat Portfolio Time</h2>
+          </div>
+
+          <div class="text-box">
+            <h4>Who is Michael Barakat?</h4>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+          </div>
+        </section>
+
+        <section class="page-content work-section" id="work">
+          <div class="image-box">
+            <h2>WORK</h2>
+          </div>
+
+          <div class="text-box">
+            <h4>Real work done by a real human!</h4>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
+            <ul>
+              <li>Point 1</li>
+              <li>Point 2</li>
+              <li>Point 3</li>
+            </ul>
+          </div>
+        </section>
+
+      <section id="blog" class="page-content">
+        <div class="work-section">
+          <div class="image-box blog">
+            <h2>BLOG</h2>
+          </div>
         </div>
-      </section>
+         <div id="posts" class="text-box posts">
 
-      <section class="about-section" id="about">
-        <div class="image-box">
-          <h2>Michael Barakat Portfolio Time</h2>
-        </div>
+             <article class="template posts" data-category="cat">
+               <header>
+                 <h1>Title</h1>
+                 <div class="byline">
+                   <p>By <span class="author">Author Name</span></p>
+                   published <time pubdate datetime="2000-01-01">Publish Time</time>
+                 </div>
+               </header>
+             <div class="post-content"></div>
+           </article>
+         </div>
+       </section>
 
-        <div class="text-box">
-          <h4>Who is Michael Barakat?</h4>
-          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
-        </div>
-      </section>
+        <section class="page-content contact-section" id="contact">
+          <div class="image-box contact">
+            <h2>CONTACT</h2>
+          </div>
+          <div class="text-box">
 
-      <section class="work-section" id="work">
-        <div class="image-box">
-          <h2>WORK</h2>
-        </div>
-
-        <div class="text-box">
-          <h4>Real work done by a real human!</h4>
-          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
-          <ul>
-            <li>Point 1</li>
-            <li>Point 2</li>
-            <li>Point 3</li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="work-section" id="blog">
-        <div class="image-box blog">
-          <h2>BLOG</h2>
-        </div>
-      </section>
-
-      <section id="posts" class="text-box posts">
-          <article class="template posts" data-category="cat">
-            <header>
-              <h1>Title</h1>
-              <div class="byline">
-                <p>By <span class="author">Author Name</span></p>
-                published <time pubdate datetime="2000-01-01">Publish Time</time>
-              </div>
-            </header>
-          <section class="post-content"></section>
-        </article>
-      </section>
-
-
-      <section class="contact-section" id="contact">
-        <div class="image-box contact">
-          <h2>CONTACT</h2>
-        </div>
-        <div class="text-box">
-          
-          <ul class="social-nav">
-            <li class="social-item"><a href="https://www.facebook.com/michaelbkats"><span class="icon-facebook2"></span></a></li>
-            <li class="social-item"><a href="https://twitter.com/MikeyBkats"><span class="icon-twitter"></span></a></li>
-            <li class="social-item"><a href="https://www.linkedin.com/in/michael-barakat"><span class="icon-linkedin"></span></a></li>
-            <li class="social-item"><a href="https://github.com/mikeybkats"><span class="icon-github"></span></a></li>
-          </ul>
-
-          <p class="contact-info">Hello Deary</p>
-          <p class="contact-info">Michael Barakat</p>
-          <p class="contact-info">michaelbkats@gmail.com</p>
-          <p class="contact-info">215.519.9164</p>
-        </div>
-      </section>
-    </main>
-
+            <ul class="social-nav">
+              <li class="social-item"><a href="https://www.facebook.com/michaelbkats"><span class="icon-facebook2"></span></a></li>
+              <li class="social-item"><a href="https://twitter.com/MikeyBkats"><span class="icon-twitter"></span></a></li>
+              <li class="social-item"><a href="https://www.linkedin.com/in/michael-barakat"><span class="icon-linkedin"></span></a></li>
+              <li class="social-item"><a href="https://github.com/mikeybkats"><span class="icon-github"></span></a></li>
+            </ul>
+            <div class="contact-info-box">
+              <p class="contact-info">Hello Deary</p>
+              <p class="contact-info">Michael Barakat</p>
+              <p class="contact-info">michaelbkats@gmail.com</p>
+              <p class="contact-info">215.519.9164</p>
+            </div>
+          </div>
+        </section>
+      </main>
     <footer>
     </footer>
-
-</div>
+  </div>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="scripts/posts.js" type="text/javascript"></script>
