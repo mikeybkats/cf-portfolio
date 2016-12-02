@@ -9,6 +9,28 @@
     <link rel="stylesheet" href="styles/modules.css">
     <link rel="stylesheet" href="vendor/sitepoint.css">
     <link rel="stylesheet" href="vendor/icons.css">
+    <script id="postsTemplate" type="text/x-handlebars-template">
+      <article class="template posts" data-category="cat">
+        <header>
+          <h1>{{title}}</h1>
+          <div class="byline">
+            <p>By <span class="author">{{author}}</span></p>
+            published <time pubdate datetime="2000-01-01">{{datePublished}}</time>
+          </div>
+        </header>
+      <div class="post-content"></div>
+    </article>
+    </script>
+    <!-- <script id="about-template" type="text/x-handlebars-template">
+      <div class="image-box about-image">
+        <h2 class="about-title">{{aboutHeroText}}</h2>
+      </div>
+
+      <div class="text-box">
+        <h4>{{aboutTitle}}</h4>
+        <p>{{aboutBody}}</p>
+      </div>
+    </script> -->
   </head>
 
   <body>
@@ -66,19 +88,7 @@
             <h2>BLOG</h2>
           </div>
         </div>
-         <div id="posts" class="text-box posts">
-
-             <article class="template posts" data-category="cat">
-               <header>
-                 <h1>Title</h1>
-                 <div class="byline">
-                   <p>By <span class="author">Author Name</span></p>
-                   published <time pubdate datetime="2000-01-01">Publish Time</time>
-                 </div>
-               </header>
-             <div class="post-content"></div>
-           </article>
-         </div>
+         <div id="posts" class="text-box posts"></div>
        </section>
 
         <section class="page-content contact-section" id="contact">
