@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="styles/modules.css">
     <link rel="stylesheet" href="vendor/sitepoint.css">
     <link rel="stylesheet" href="vendor/icons.css">
+
     <script id="postsTemplate" type="text/x-handlebars-template">
       <article class="template posts" data-category="cat">
         <header>
@@ -18,9 +19,10 @@
             published <time pubdate datetime="2000-01-01">{{datePublished}}</time>
           </div>
         </header>
-      <div class="post-content"></div>
-    </article>
+        <div class="post-content">{{{body}}}</div>
+      </article>
     </script>
+
     <!-- <script id="about-template" type="text/x-handlebars-template">
       <div class="image-box about-image">
         <h2 class="about-title">{{aboutHeroText}}</h2>
@@ -88,7 +90,10 @@
             <h2>BLOG</h2>
           </div>
         </div>
-         <div id="posts" class="text-box posts"></div>
+         <div id="posts" class="text-box posts">
+
+
+         </div>
        </section>
 
         <section class="page-content contact-section" id="contact">

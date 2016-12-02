@@ -10,12 +10,10 @@ function Post (options){
 
 // class04 make a new function prototype that works with the handlebars template in the index.html
 Post.prototype.toHtml = function(){
-  // add any functions that implement the prototype object
-
   // put in the handlebars template script and assign it to a new var
-  var $templateScript = $('#postsTemplate');
+  var $templateScript = $('#postsTemplate').html();
   // compile the template and assign it to a new var
-  var compiledTemplate = handlebars.compile($templateScript);
+  var compiledTemplate = Handlebars.compile($templateScript);
   // return the compiled template
   return compiledTemplate(this);
 };
@@ -44,7 +42,6 @@ blogPosts.forEach(function(blogPostObj){
 
 // append posts to DOM
 // cycles through all the posts (which have just been pushed to the posts[], and for each it passes them through to line 36
-posts.forEach(function(blogPostObj) {
-  // select post by id (which has been aggregated by the clone() method on each item in the posts[],
-  $('#posts').append(blogPostObj.toHtml());
+posts.forEach(function(a) {
+  $('#posts').append(a.toHtml());
 });
