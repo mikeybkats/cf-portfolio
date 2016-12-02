@@ -91,6 +91,7 @@
     line-height: 0px;
 }
 
+
 /* -------------media queries---------- */
 @media screen and (min-width:690px){
   .contact-info-box {
@@ -98,5 +99,10 @@
       flex-direction: row;;
       align-items: flex-start;;
       justify-content: space-around;
+  }
+
+  section.page-content {
+    padding-bottom: 10vh;
+    padding-top: 2vh;
   }
 }

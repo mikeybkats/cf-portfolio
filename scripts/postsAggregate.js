@@ -8,16 +8,14 @@ function Post (options){
   this.body = options.body;
 }
 
-// make a prototype post that passes new posts into the HTML template.
+// class04 make a new function prototype that works with the handlebars template in the index.html
 Post.prototype.toHtml = function(){
-  var $newPost = $('article.template').clone();
-  $newPost.find('h1').text(this.title);
-  $newPost.find('time').text(this.datePublished);
-  $newPost.find('.author').text(this.author);
-  $newPost.find('.post-content').append(this.body);
-  // remove the template class to show the object
-  $newPost.removeClass('template');
-  return $newPost;
+  // put in the handlebars template script and assign it to a new var
+  var $templateScript = $('#postsTemplate').html();
+  // compile the template and assign it to a new var
+  var compiledTemplate = Handlebars.compile($templateScript);
+  // return the compiled template
+  return compiledTemplate(this);
 };
 
 // sort the blog posts by newest to oldest
@@ -33,6 +31,5 @@ blogPosts.forEach(function(blogPostObj){
 // append posts to DOM
 // cycles through all the posts (which have just been pushed to the posts[], and for each it passes them through to line 36
 posts.forEach(function(blogPostObj) {
-  // select post by id (which has been aggregated by the clone() method on each item in the posts[],
   $('#posts').append(blogPostObj.toHtml());
 });

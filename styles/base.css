@@ -53,7 +53,7 @@ h1 {
 
 header h1 {
     max-width: 100%;
-    line-height: 20px;
+    line-height: 0px;
 }
 
 h3 {
@@ -63,4 +63,8 @@ h3.page-title {
   color: white;
   float: right;
   margin-right: 5%;
+}
+
+byline p {
+    line-height: 0px;
 }
