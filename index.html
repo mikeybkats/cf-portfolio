@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="vendor/icons.css">
 
     <script id="postsTemplate" type="text/x-handlebars-template">
-      <article class="template posts" data-category="cat">
+      <article class="posts" data-category="cat">
         <header>
           <h1>{{title}}</h1>
           <div class="byline">
@@ -23,16 +23,6 @@
       </article>
     </script>
 
-    <!-- <script id="about-template" type="text/x-handlebars-template">
-      <div class="image-box about-image">
-        <h2 class="about-title">{{aboutHeroText}}</h2>
-      </div>
-
-      <div class="text-box">
-        <h4>{{aboutTitle}}</h4>
-        <p>{{aboutBody}}</p>
-      </div>
-    </script> -->
   </head>
 
   <body>
@@ -90,10 +80,9 @@
             <h2>BLOG</h2>
           </div>
         </div>
-         <div id="posts" class="text-box posts">
 
+         <div id="posts" class="text-box posts"></div>
 
-         </div>
        </section>
 
         <section class="page-content contact-section" id="contact">

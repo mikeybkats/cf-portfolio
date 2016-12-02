@@ -10,12 +10,11 @@ $(document).ready(function(){
 // menu functionality: on click hide other sections
 sectionViewer.navigationFilter = function(){
   $('.main-nav').on('click', '.nav-item',function(){
-
     // Hide all of the sections that contain unwanted content
     $('.page-content').hide();
     // Fade in the single section that is wanted
     $('#' + $(this).data('spec')).fadeIn('slow');
-    window.scrollTo(0, 0);
+    window.setTimeout(function(){window.scrollTo(0, 0);}, 100);
   });
   $('.main-nav .menu-item:first').click();
 };
