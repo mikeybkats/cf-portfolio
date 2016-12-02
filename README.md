@@ -23,6 +23,10 @@ This is a portfolio site to display michael barakat's work. It is / has been / i
   -Then use jQuery so when the tab is clicked, you hide all the sections, then reveal the associated section only.
 2. As a reader, I want the portfolio to use a nice color scheme, so that it stands out visually.
 
+##### class 04
+1. As a developer, I want to use Handlebars for my project template, so that I can include new projects more easily.
+2. As a developer, I want my CSS styles to follow SMACSS organization, so that I know where to look for creating and editing styles.
+
 ### technical requirements (as supplied by 301 class)
 ##### class 01
 - Be sure to use proper viewport settings.
@@ -43,3 +47,7 @@ Your "Project" prototype should have a .toHtml() function that adds new data to 
 - Add click handlers to at least one nav section.
 - Do as much work as you can with advanced selectors, rather than littering your markup with classes and ids.
 - When classes and IDs are needed, pick semantic names. There is to be no $('#content .content') nonsense!
+
+##### class 04
+- Add Handlebars to your blogging system.
+- Organize your CSS code according to SMACSS, with at least a file for base, layout, and modules.

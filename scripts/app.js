@@ -15,6 +15,7 @@ sectionViewer.navigationFilter = function(){
     $('.page-content').hide();
     // Fade in the single section that is wanted
     $('#' + $(this).data('spec')).fadeIn('slow');
+    window.scrollTo(0, 0);
   });
   $('.main-nav .menu-item:first').click();
 };
