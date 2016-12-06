@@ -40,8 +40,8 @@ Post.fetchAll = function() {
 
   Article.fetchAll = function() {
     if (localStorage.hackerIpsum) {
-       Let's make a request to get the eTag (hint: what method on which
-        object could we use to find the eTag?
+       Let's make a request to get the eTag (hint: what method on which object could we use to find the eTag?
+       $.getJSON('data')
 
     } else {}
   }
