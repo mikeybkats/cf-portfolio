@@ -18,30 +18,31 @@ Post.loadAll = function(inputData) {
   })
   .forEach(function(ele) {
     Post.allPosts.push(new Post(ele));
+    // console.log(ele);
   });
 };
 
 Post.fetchAll = function() {
-  // if (localStorage){
-  //
-  // }else{
+  if (localStorage.postsJSON){
+    Posts.loadAll(JSON.parse(postsJSON));
+    postsViewer.renderToPage();
+  }else{
     $.getJSON('data/posts.json', function(postsJSON){
       Post.loadAll(postsJSON);
       localStorage.setItem('posts', JSON.stringify(postsJSON));
-      
+      postsViewer.renderToPage();
     });
-    postsViewer.renderToPage();
-  // }
+  }
 };
-// // sort the blog posts by newest to oldest
-// blogPosts.sort(function(currentObject, nextObject){
-//   return (new Date(nextObject.datePublished)) - (new Date(currentObject.datePublished));
-// });
-//
-// push the new posts into the array
-// blogPosts.forEach(function(blogPostObj){
-//   posts.push(new Post(blogPostObj));
-// });
-//
-// // append posts to DOM
-// // cycles through all the posts (which have just been pushed to the posts[], and for each it passes them through to line 34
+
+/* Great work so far! STRETCH GOAL TIME!? Our main goal in this part of the
+   lab will be saving the eTag located in Headers, to see if it's been updated:
+
+  Article.fetchAll = function() {
+    if (localStorage.hackerIpsum) {
+       Let's make a request to get the eTag (hint: what method on which
+        object could we use to find the eTag?
+
+    } else {}
+  }
+*/
