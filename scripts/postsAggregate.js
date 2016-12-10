@@ -24,16 +24,39 @@ Post.loadAll = function(inputData) {
 
 Post.fetchAll = function() {
   if (localStorage.postsJSON){
-    Posts.loadAll(JSON.parse(postsJSON));
-    postsViewer.renderToPage();
-  }else{
-    $.getJSON('data/posts.json', function(postsJSON){
+    $.ajax({
+      url: 'data/posts.json',
+      type: 'HEAD',
+      success: function(postsJSON, textStatus, jqXHR){
+        var etag = jqXHR.getResponseHeader('etag');
+        if(localStorage.etag === etag){
+          Posts.loadAll(JSON.parse(postsJSON));
+          postsViewer.renderToPage();
+        }else{
+          $.getJSON('data/posts.json', function( postsJSON, textStatus, jqXHR){
+            jqXHR.getResponseHeader('etag');
+            Post.loadAll(postsJSON);
+            localStorage.setItem('posts', JSON.stringify(postsJSON));
+            postsViewer.renderToPage();
+          });
+        }
+      }
+    });
+
+  }
+
+  else{
+    $.getJSON('data/posts.json', function( postsJSON, textStatus, jqXHR){
+      jqXHR.getResponseHeader('etag');
+      console.log(jqXHR.getResponseHeader('etag'));
       Post.loadAll(postsJSON);
       localStorage.setItem('posts', JSON.stringify(postsJSON));
       postsViewer.renderToPage();
     });
   }
 };
+//
+
 
 /* Great work so far! STRETCH GOAL TIME!? Our main goal in this part of the
    lab will be saving the eTag located in Headers, to see if it's been updated:

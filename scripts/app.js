@@ -23,7 +23,7 @@ postsViewer.navigationFilter = function(){
 postsViewer.renderToPage = function(){
   Post.allPosts.forEach(function(blogPostObj){
     $('#posts').append(blogPostObj.toHtml('#postsTemplate'));
-    console.log(blogPostObj);
+    // console.log(blogPostObj);
   });
   postsViewer.navigationFilter();
 };
