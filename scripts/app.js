@@ -7,6 +7,20 @@ $(document).ready(function(){
   });
 });
 
+function menuHighlight(){
+  $('.nav-item a').on('click', function(){
+    $('.nav-item').removeClass('active');
+  });
+
+  $('.nav-item a').on('click', function(){
+    var href = $(this).attr('href');
+    console.log(href);
+    $('li.nav-item a[href="' + href + '"]').parent().addClass('active');
+  });
+};
+
+menuHighlight();
+
 // menu functionality: on click hide other sections
 postsViewer.navigationFilter = function(){
   $('.main-nav').on('click', '.nav-item',function(){
@@ -29,3 +43,8 @@ postsViewer.renderToPage = function(){
 };
 
 Post.fetchAll();
+
+// this.forEach(function(itemInArray) {
+//   if(predicateFunction(itemInArray)){
+//     results.push(itemInArray);}
+// });

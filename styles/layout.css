@@ -72,7 +72,7 @@
 /* ---------SECTIONS AND DIVS----------*/
 
 .title-background {
-  background-color: #E68244;
+  background-color: #EF9B46;
   width: 100vw;
   height: 60px;
   margin-top: 0px;
@@ -105,4 +105,11 @@
     padding-bottom: 10vh;
     padding-top: 2vh;
   }
+
+  .nav-title {
+    float: right;
+    width: 100%;
+    margin-right: 5%;
+  }
+
 }
