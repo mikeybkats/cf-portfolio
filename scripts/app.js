@@ -27,8 +27,6 @@ postsViewer.navigationFilter = function(){
     $('.page-content').hide();
     // Fade in the single section that is wanted
     $('#' + $(this).data('spec')).fadeIn('slow');
-    // sort of makeshift way to scroll back to the top
-    window.setTimeout(function(){window.scrollTo(0, 0);}, 100);
   });
   $('.main-nav .menu-item:first').click();
 };
@@ -36,7 +34,6 @@ postsViewer.navigationFilter = function(){
 postsViewer.renderToPage = function(){
   Post.allPosts.forEach(function(blogPostObj){
     $('#posts').append(blogPostObj.toHtml('#postsTemplate'));
-    // console.log(blogPostObj);
   });
   postsViewer.navigationFilter();
 };
