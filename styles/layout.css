@@ -17,7 +17,7 @@
 
 .image-box {
   background-color: gray;
-  margin: 5vh 10vw 5vh 10vw;
+  margin: 0vh 10vw 5vh 10vw;
   width: 80vw;
   height: 45vh;
   display: flex;
@@ -70,6 +70,10 @@
 
 
 /* ---------SECTIONS AND DIVS----------*/
+
+section.about-section {
+  padding-top: 20px;
+}
 
 .title-background {
   background-color: #EF9B46;

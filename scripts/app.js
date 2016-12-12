@@ -19,7 +19,6 @@ function menuHighlight(){
   });
 };
 
-menuHighlight();
 
 // menu functionality: on click hide other sections
 postsViewer.navigationFilter = function(){
@@ -42,6 +41,7 @@ postsViewer.renderToPage = function(){
   postsViewer.navigationFilter();
 };
 
+menuHighlight();
 Post.fetchAll();
 
 // this.forEach(function(itemInArray) {
