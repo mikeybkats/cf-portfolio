@@ -16,9 +16,8 @@ Post.loadAll = function(inputData) {
   inputData.sort(function(a,b) {
     return (new Date(b.datePublished)) - (new Date(a.datePublished));
   })
-  .forEach(function(ele) {
+  .map(function(ele) {
     Post.allPosts.push(new Post(ele));
-    // console.log(ele);
   });
 };
 
@@ -42,7 +41,6 @@ Post.fetchAll = function() {
         }
       }
     });
-
   }
 
   else{
