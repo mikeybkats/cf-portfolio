@@ -3,7 +3,7 @@
   var reposCompiler = Handlebars.compile($('#gitHubTemplate').html());
 
   reposViewObject.renderRepos = function() {
-    $('.github-content').append(
+    $('.github-content').empty().append(
       reposObject.withTheAttribute('name').map(reposCompiler)
     );
   };

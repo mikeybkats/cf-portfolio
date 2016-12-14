@@ -18,18 +18,19 @@
       headers: {'Authorization': 'token ' + michaelToken },
       success: function(data, string, xhr){
         // the success message will instantiate the callback(); and close the function
-        allRepoData = data;
         console.log(data);
+        reposObject.reposArray = data;
         callback();
       }
     });
   };
-  // the last thing to do is set the module.object = object
 
   reposObject.withTheAttribute = function(myAttr) {
     return reposObject.reposArray.filter(function(aRepo) {
       return aRepo[myAttr];
     });
   };
+
+  // the last thing to do is set the module.object = object
   module.reposObject = reposObject;
 })(window);
