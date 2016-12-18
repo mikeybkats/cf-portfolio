@@ -13,10 +13,10 @@
     // NOTE: refactor this request into an $.get call
     $.when(
        $.get('/github/users/mikeybkats/repos', function(data) {
-         reposObj.allRepos = data;
+         reposObject.allRepos = data;
        }),
        $.get('/github/users/mikeybkats/followers', function(data) {
-         reposObj.followers = data;
+         reposObject.followers = data;
        })
       ).done(callback);
   };
