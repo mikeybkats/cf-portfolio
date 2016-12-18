@@ -14,26 +14,14 @@
     $.when(
        $.get('/github/users/mikeybkats/repos', function(data) {
          reposObject.allRepos = data;
+         console.log(reposObject.allRepos);
        }),
        $.get('/github/users/mikeybkats/followers', function(data) {
          reposObject.followers = data;
+         console.log(reposObject.followers);
        })
       ).done(callback);
   };
-
-  // $.ajax({
-  //     // within the ajax function make an ajax query for your github repos
-  //     // url: , type: , headers: , success: function that takes three arguments and passes the data into the object.array
-  //   url: 'https://api.github.com/users/mikeybkats/repos' + '?page=2' + '&per_page=20',
-  //   method: 'GET',
-  //   headers: {'Authorization': 'token ' + GITHUB_TOKEN },
-  //   success: function(data, string, xhr){
-  //       // the success message will instantiate the callback(); and close the function
-  //     console.log(data);
-  //     reposObject.reposArray = data;
-  //     callback();
-  //   }
-  // });
 
   reposObject.withTheAttribute = function(myAttr) {
     return reposObject.reposArray.filter(function(aRepo) {
