@@ -15,7 +15,7 @@
       // url: , type: , headers: , success: function that takes three arguments and passes the data into the object.array
       url: 'https://api.github.com/users/mikeybkats/repos' + '?page=2' + '&per_page=20',
       method: 'GET',
-      headers: {'Authorization': 'token ' + michaelToken },
+      headers: {'Authorization': 'token ' + GITHUB_TOKEN },
       success: function(data, string, xhr){
         // the success message will instantiate the callback(); and close the function
         console.log(data);
