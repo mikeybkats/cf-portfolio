@@ -10,20 +10,30 @@
   // make an object.functionName (reference object) as a callback function
   reposObject.queryRepos = function(callback){
     // this function will contact the api and pull down the info we need and store it in our new array.
-    $.ajax({
-      // within the ajax function make an ajax query for your github repos
-      // url: , type: , headers: , success: function that takes three arguments and passes the data into the object.array
-      url: 'https://api.github.com/users/mikeybkats/repos' + '?page=2' + '&per_page=20',
-      method: 'GET',
-      headers: {'Authorization': 'token ' + GITHUB_TOKEN },
-      success: function(data, string, xhr){
-        // the success message will instantiate the callback(); and close the function
-        console.log(data);
-        reposObject.reposArray = data;
-        callback();
-      }
-    });
+    // NOTE: refactor this request into an $.get call
+    $.when(
+       $.get('/github/users/mikeybkats/repos', function(data) {
+         reposObj.allRepos = data;
+       }),
+       $.get('/github/users/mikeybkats/followers', function(data) {
+         reposObj.followers = data;
+       })
+      ).done(callback);
   };
+
+  // $.ajax({
+  //     // within the ajax function make an ajax query for your github repos
+  //     // url: , type: , headers: , success: function that takes three arguments and passes the data into the object.array
+  //   url: 'https://api.github.com/users/mikeybkats/repos' + '?page=2' + '&per_page=20',
+  //   method: 'GET',
+  //   headers: {'Authorization': 'token ' + GITHUB_TOKEN },
+  //   success: function(data, string, xhr){
+  //       // the success message will instantiate the callback(); and close the function
+  //     console.log(data);
+  //     reposObject.reposArray = data;
+  //     callback();
+  //   }
+  // });
 
   reposObject.withTheAttribute = function(myAttr) {
     return reposObject.reposArray.filter(function(aRepo) {
