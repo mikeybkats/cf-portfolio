@@ -9,8 +9,6 @@
 
   // make an object.functionName (reference object) as a callback function
   reposObject.queryRepos = function(callback){
-    // this function will contact the api and pull down the info we need and store it in our new array.
-    // NOTE: refactor this request into an $.get call
     $.when(
        $.get('/github/users/mikeybkats/repos', function(data) {
          console.log(data);
@@ -24,6 +22,5 @@
     });
   };
 
-  // the last thing to do is set the module.object = object
   module.reposObject = reposObject;
 })(window);
