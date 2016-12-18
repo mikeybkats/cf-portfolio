@@ -13,14 +13,9 @@
     // NOTE: refactor this request into an $.get call
     $.when(
        $.get('/github/users/mikeybkats/repos', function(data) {
-         reposObject.allRepos = data;
-         console.log(reposObject.allRepos);
-       }),
-       $.get('/github/users/mikeybkats/followers', function(data) {
-         reposObject.followers = data;
-         console.log(reposObject.followers);
-       })
-      ).done(callback);
+         console.log(data);
+         reposObject.reposArray = data;
+       })).done(callback);
   };
 
   reposObject.withTheAttribute = function(myAttr) {
