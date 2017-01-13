@@ -37,6 +37,7 @@ Post.fetchAll = function() {
             Post.loadAll(postsJSON);
             localStorage.setItem('posts', JSON.stringify(postsJSON));
             postsViewer.renderToPage();
+            Project.projectClick();
           });
         }
       }
@@ -50,6 +51,7 @@ Post.fetchAll = function() {
       Post.loadAll(postsJSON);
       localStorage.setItem('posts', JSON.stringify(postsJSON));
       postsViewer.renderToPage();
+      Project.projectClick();
     });
   }
 };

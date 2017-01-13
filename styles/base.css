@@ -1,6 +1,12 @@
 section {
 }
 
+iframe {
+    border-width: 0px;
+    height: 100vh;
+    width: 100vw;
+}
+
 footer {
   background-color: white;
 }
@@ -22,6 +28,7 @@ ul.social-nav {
 }
 
 li {
+  font-family: Roboto Mono;
   list-style: none;
 }
 
@@ -45,26 +52,57 @@ a {
 /* -------------TEXT STYLES-------------- */
 
 p {
+  font-family: Open Sans;
 }
 
 h1 {
+  font-family: Roboto Mono;
   line-height: 0px;
 }
 
-header h1 {
-    max-width: 100%;
-    line-height: 20px;
+h2 {
+  font-family: Roboto Mono;
+}
+
+header h2 {
+  font-family: Roboto Mono;
+  max-width: 100%;
+  line-height: 20px;
+  font-size: 1.7em;
+  color: #666;
+  padding-bottom: 10px;
+  line-height: normal;
+}
+
+.imageOverlay h1 {
+  color: white;
+  font-size: 2.5em;
+  line-height: normal;
+  text-align: center;
+  max-width: 90%;
 }
 
 h3 {
+  font-family: Roboto Mono;
 }
 
 h3.page-title {
+  font-family: Roboto Mono;
   color: white;
   float: right;
   margin-right: 5%;
 }
 
-byline p {
-    line-height: 0px;
+h4 {
+    font-family: Open Sans;
+}
+
+.byline p {
+  font-family: Open Sans;
+  line-height: 20px;
+  color: #999;
+}
+
+timeline {
+  font-family: Open Sans;
 }
