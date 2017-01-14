@@ -80,11 +80,20 @@
     max-width: 100%;
 }
 
-.project-image {
+/*.project-image {
     min-width: 100px;
     min-height: 100px;
     margin: 20px;
     max-height: 260px;
+}*/
+
+.project-image {
+min-width: 100px; */
+    /* min-height: 100px; */
+    margin: 20px;
+    width: 60vw;
+    height: 35vh;
+    /* max-height: 260px; */
 }
 
 .project-list-item a {

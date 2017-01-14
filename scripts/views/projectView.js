@@ -6,6 +6,7 @@ Project.projectClick = function (){
     // append the project with the prototype function
     $('#project-iframe').empty();
     $('.projects-div').hide();
+    $('#blog').siblings().hide();
     $('.second-nav').show();
     $('#project-iframe').append(clickedProject.compileProjectToHtml());
   });

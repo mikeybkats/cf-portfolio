@@ -2,6 +2,7 @@
   var allPagesController = {};
 
   allPagesController.reveal = function (){
+    $('.second-nav').hide();
     $('section.title-section').siblings().hide();
     $('section.title-section').siblings().fadeIn('slow');
   };

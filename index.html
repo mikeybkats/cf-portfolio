@@ -17,7 +17,7 @@
     <script id="postsTemplate" type="text/x-handlebars-template">
       <article class="posts" data-category="cat">
         <header>
-		        <div style="background: url({{imagePath}}) center center / cover no-repeat border-box border-box; min-width: 100%; height:260px;"></div>
+		        <div style="background: url({{imagePath}}) center center / cover no-repeat border-box border-box; min-width: 100%; height:70vh;"></div>
             <h2 class="blog-title">{{title}}</h2>
             <div class="byline">
             <p class="author">by <span class="author">{{author}}</span></p>
@@ -34,7 +34,7 @@
     </script>
 
     <script id="iFrameProjectTemplate" type="text/x-handlebars-template">
-      <iframe name="project-iframe" src="{{project_url}}"></iframe>
+      <iframe name="project-iframe" onload="scroll(0,0); parent.scrollTo(0,0);" src="{{project_url}}"></iframe>
     </script>
 
   </head>
@@ -56,7 +56,6 @@
           <li class="nav-title"><h3 class="page-title">hello deary</h3></li>
         </ul>
       </nav>
-
       <input type="checkbox" id="nav-trigger" class="nav-trigger" />
       <label for="nav-trigger"></label>
 
@@ -70,12 +69,12 @@
 
         <section class="page-content about-section" id="about">
           <div class="image-box about-image">
-            <div class="imageOverlay"><h1 class="about-title">Michael Barakat Portfolio Time</h1></div>
+            <div class="imageOverlay"><h1 class="about-title">Michael Barakat<br /> Front End Developer</h1></div>
           </div>
 
           <div class="text-box">
             <h4>Who is Michael Barakat?</h4>
-            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+            <p>I'm a front end designer and developer. Going further back, I'm a lifelong designer and maker. In short, I build things.</p>
           </div>
         </section>
 
@@ -85,12 +84,22 @@
           </div>
 
           <div class="text-box">
-            <h4>Real work done by a real human!</h4>
-            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
+            <h4>I'm not just a problem solver, I get things done.</h4>
+            <p>Even with just a year of practical web development experience I am equipped to tackle a range of different project types. Below are a list of tools and technologies I use to tackle common web design and development challenges:</p>
             <ul>
-              <li>Point 1</li>
-              <li>Point 2</li>
-              <li>Point 3</li>
+              <li>javascript</li>
+              <li>node.js</li>
+              <li>express.js</li>
+              <li>express proxy</li>
+              <li>handlebars.js</li>
+              <li>html5sql</li>
+              <li>ajax</li>
+              <li>jQuery</li>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>SQL</li>
+              <li>PHP</li>
+              <li>Angular.js (currently in the process of learning!)</li>
             </ul>
           </div>
           <div class="github-content"></div>
