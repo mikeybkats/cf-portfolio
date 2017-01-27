@@ -3,9 +3,9 @@
 }
 
 /* ----------IMAGES / BOXES---------- */
-
 .text-box {
-  margin: 5vh 10vw 5vh 10vw;
+    margin: 0vh 0vw 5vh 0vw;
+    padding: 30px;
 }
 
 .text-box.posts{
@@ -16,14 +16,14 @@
 }
 
 .image-box {
-  background-color: gray;
-  margin: 0vh 10vw 5vh 10vw;
-  width: 80vw;
-  height: 45vh;
-  display: flex;
-  align-items: center;
-  align-content: center;
-  justify-content: center;
+    background-color: gray;
+    margin: 0vh 0vw 5vh 0vw;
+    width: 100vw;
+    height: 45vh;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
 }
 
 .image-box.contact {
@@ -110,9 +110,8 @@ min-width: 100px; */
 }
 
 /* ---------SECTIONS AND DIVS----------*/
-
 section.about-section {
-  padding-top: 20px;
+    padding-top: 0px;
 }
 
 .title-background {
@@ -166,11 +165,20 @@ section.about-section {
 
 /* -------------media queries---------- */
 @media screen and (min-width:690px){
+  .text-box {
+    margin: 5vh 10vw 5vh 10vw;
+  }
+
+  
   .contact-info-box {
       display: flex;
       flex-direction: row;;
       align-items: flex-start;;
       justify-content: space-around;
+  }
+
+  section.about-section {
+    padding-top: 20px;
   }
 
   section.page-content {
@@ -194,5 +202,16 @@ section.about-section {
 
   nav.main-nav {
     margin-bottom: 90px;
+  }
+
+  .image-box {
+    background-color: gray;
+    margin: 0vh 10vw 5vh 10vw;
+    width: 80vw;
+    height: 45vh;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
   }
 }
