@@ -14,7 +14,7 @@ var express = require('express'),
 //  }))(request, response);
 //};
 
-app.get('/github/*', proxyGithub);
+// app.get('/github/*', proxyGithub);
 
 app.use(express.static('./'));
 

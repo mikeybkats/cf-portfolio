@@ -162,6 +162,8 @@ section.about-section {
   margin: 0px;
 }
 
+
+
 /* -------------media queries---------- */
 @media screen and (min-width:690px){
   .contact-info-box {
@@ -173,7 +175,7 @@ section.about-section {
 
   section.page-content {
     padding-bottom: 0vh;
-    padding-top: 0vh;
+    padding-top: 4vh;
   }
 
   .nav-title {
