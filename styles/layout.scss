@@ -2,32 +2,33 @@ body {
   margin: 0px;
 }
 
+main {
+  max-width: 100%;
+  margin: 0px auto;
+}
+
 .template {
   display:none;
 }
 
 /* ----------IMAGES / BOXES---------- */
 .text-box {
-  margin: 0vh 0vw 5vh 0vw;
   padding: 30px;
 }
 
 .text-box.posts{
   background-color: #EBEBEC;
-  padding: 15px;
+  padding: 25px;
   margin-top: 0px;
   margin-bottom: 0px;
 }
 
 .image-box {
-  width: 80%;
   margin: 0px auto;
   display: block;
-  height: 45vh;
+  height: 50vh;
   &.contact{
     background: url(../images/contact-lightbulb.jpg) 100% 100% / cover no-repeat border-box border-box;
-    margin: 0vh 10vw 0vh 10vw;
-    width: 80vw;
     height: 15vh;
   }
   &.blog{
@@ -41,11 +42,6 @@ body {
   &.about-image {
     background: url(../images/about-citylight.jpg) 100% 100% / cover no-repeat border-box border-box;
   }
-}
-
-
-.contact-section .text-box {
-  margin: 0vh 10vw 0vh 10vw;
 }
 
 .image-box h2 {
@@ -62,8 +58,13 @@ body {
 
 .project-list {
   justify-content: center;
+  align-items: center;
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
+  li {
+    margin: 40px 0px;
+  }
 }
 
 .project-list-item {
@@ -127,18 +128,19 @@ section.about-section {
 }
 
 .imageOverlay {
-  background: rgba(0, 0, 0, 0.3);
+  background: RGBA(122, 120, 115, .75);
   width: 100%;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   align-content: center;
-}
-
-.project-image .imageOverlay {
-  align-items: flex-start;
-  justify-content: flex-start;
+  &.unset-color {
+    background: transparent;
+  }
+  &.darken {
+    background: RGBA(0, 0, 0, .5);
+  }
 }
 
 .blog-title {
@@ -153,15 +155,8 @@ section.about-section {
   margin: 0px;
 }
 
-
-
 /* -------------media queries---------- */
-@media screen and (min-width:690px){
-  .text-box {
-    margin: 5vh 10vw 5vh 10vw;
-  }
-
-
+@media screen and (min-width:860px){
   .contact-info-box {
     display: flex;
     flex-direction: row;;
@@ -175,7 +170,7 @@ section.about-section {
 
   section.page-content {
     padding-bottom: 0vh;
-    padding-top: 4vh;
+    padding-top: 0vh;
   }
 
   .nav-title {
@@ -197,13 +192,13 @@ section.about-section {
   }
 
   .image-box {
-    // background-color: gray;
-    // margin: 0vh 10vw 5vh 10vw;
-    // width: 80vw;
-    // height: 45vh;
-    // display: flex;
-    // align-items: center;
-    // align-content: center;
-    // justify-content: center;
+    margin: 0px auto;
+    display: block;
+    height: 45vh;
+  }
+
+  .text-box {
+    max-width: 60%;
+    margin: 0px auto;
   }
 }
