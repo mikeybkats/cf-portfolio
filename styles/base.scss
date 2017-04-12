@@ -1,17 +1,23 @@
 html, body {
-  height: 100%; }
+  height: 100% ;
+}
+
+section {
+}
 
 iframe {
-  border-width: 0px;
-  height: 100vh;
-  width: 100vw;
-  /*margin-top: -22px;*/
-  margin-top: 0px;
-  margin-left: -8px;
-  top: 60px; }
+    border-width: 0px;
+    height: 100vh;
+    width: 100vw;
+    /*margin-top: -22px;*/
+    margin-top: 0px;
+    margin-left: -8px;
+    top: 60px;
+}
 
 footer {
-  background-color: white; }
+  background-color: white;
+}
 
 ul, menu, dir {
   display: block;
@@ -20,40 +26,51 @@ ul, menu, dir {
   -webkit-margin-after: 0em;
   -webkit-margin-start: 0px;
   -webkit-margin-end: 0px;
-  -webkit-padding-start: 0px; }
+  -webkit-padding-start: 0px;
+}
 
 ul.social-nav {
   display: flex;
   justify-content: space-around;
-  margin: 5vh 0 5vh 0; }
+  margin: 5vh 0 5vh 0;
+}
 
 li {
   font-family: Roboto Mono;
-  list-style: none; }
+  list-style: none;
+}
 
 li.social-item {
   list-style: none;
   display: flex;
   justify-content: space-around;
-  font-size: 2em; }
+  font-size: 2em;
+}
 
 /* --------------LINK STYLES------------- */
-a {
-  text-decoration: none; }
 
-.social-item a {
-  color: gray; }
+a {
+  text-decoration: none;
+}
+
+.social-item a{
+  color: gray;
+}
 
 /* -------------TEXT STYLES-------------- */
+
 p {
-  font-family: Open Sans; }
+  font-family: Open Sans;
+}
 
 h1 {
   font-family: Roboto Mono;
-  line-height: 0px; }
+  line-height: 0px;
+}
 
 h2 {
-  font-family: Roboto Mono; }
+  font-family: Roboto Mono;
+}
 
 header h2 {
   font-family: Roboto Mono;
@@ -62,32 +79,39 @@ header h2 {
   font-size: 1.7em;
   color: #666;
   padding-bottom: 10px;
-  line-height: normal; }
+  line-height: normal;
+}
 
 .imageOverlay h1 {
   color: white;
   font-size: 2.5em;
   line-height: normal;
   text-align: center;
-  max-width: 90%; }
+  max-width: 90%;
+}
 
 h3 {
-  font-family: Roboto Mono; }
+  font-family: Roboto Mono;
+}
 
 h3.page-title {
   font-family: Roboto Mono;
   color: white;
   float: right;
   margin-right: 5%;
-  /*line-height: 16px;*/ }
+  /*line-height: 16px;*/
+}
 
 h4 {
-  font-family: Open Sans; }
+    font-family: Open Sans;
+}
 
 .byline p {
   font-family: Open Sans;
   line-height: 20px;
-  color: #999; }
+  color: #999;
+}
 
 timeline {
-  font-family: Open Sans; }
+  font-family: Open Sans;
+}

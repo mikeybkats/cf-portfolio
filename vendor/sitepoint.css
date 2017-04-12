@@ -49,7 +49,7 @@
 }
 
 .site-wrap {
-    padding-top: 0em;
+    /*padding-top: 0em;
     min-width: 100vw;
     min-height: 100vh;
     background-color: #fff;
@@ -58,7 +58,7 @@
     top: -8px;
     bottom: 100%;
     left: -8px;
-    z-index: 1;
+    z-index: 1;*/
 }
 
 .nav-trigger {
@@ -148,7 +148,7 @@ body {
   }
 
   .site-wrap {
-      padding-top: 0em;
+      /*padding-top: 0em;
       min-width: 100vw;
       min-height: 100vh;
       background-color: #fff;
@@ -157,7 +157,7 @@ body {
       top: -8px;
       bottom: 100%;
       left: -8px;
-      z-index: 1;
+      z-index: 1;*/
   }
 
   .nav-trigger {
