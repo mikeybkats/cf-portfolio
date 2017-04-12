@@ -1,3 +1,6 @@
+body {
+  margin: 0px; }
+
 .template {
   display: none; }
 
@@ -143,14 +146,4 @@ section.about-section {
     display: none; }
 
   nav.main-nav {
-    margin-bottom: 90px; }
-
-  .image-box {
-    background-color: gray;
-    margin: 0vh 10vw 5vh 10vw;
-    width: 80vw;
-    height: 45vh;
-    display: flex;
-    align-items: center;
-    align-content: center;
-    justify-content: center; } }
+    margin-bottom: 90px; } }

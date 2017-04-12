@@ -49,16 +49,16 @@
 }
 
 .site-wrap {
-    /*padding-top: 0em;
-    min-width: 100vw;
+    padding-top: 0em;
+    /*min-width: 100vw;*/
     min-height: 100vh;
     background-color: #fff;
     background-size: 200%;
     position: relative;
     top: -8px;
     bottom: 100%;
-    left: -8px;
-    z-index: 1;*/
+    /*left: -8px;*/
+    z-index: 1;
 }
 
 .nav-trigger {
@@ -148,16 +148,16 @@ body {
   }
 
   .site-wrap {
-      /*padding-top: 0em;
-      min-width: 100vw;
+      padding-top: 0em;
+      /*min-width: 100vw;*/
       min-height: 100vh;
       background-color: #fff;
       background-size: 200%;
       position: relative;
       top: -8px;
       bottom: 100%;
-      left: -8px;
-      z-index: 1;*/
+      /*left: -8px;*/
+      z-index: 1;
   }
 
   .nav-trigger {
