@@ -1,11 +1,10 @@
 $(document).ready(function(){
   var open = false;
-  $('.nav-item a').hide();
 
   $('.nav-trigger').on('click',function(e){
     if(open === false){
       $('html, body').on('touchmove', function(e){e.preventDefault();});
-      $('.nav-item a').show();
+      $('.nav-item a').css('display', 'block');
 
       var scrollPosition = [
         self.pageXOffset || document.documentElement.scrollLeft || document.body.scrollLeft,
@@ -22,7 +21,7 @@ $(document).ready(function(){
     }
     if(open === true){
       $('html, body').unbind('touchmove').unbind();
-      $('.nav-item a').hide();
+      $('.nav-item a').css('display', 'block');
 
       var html = $('html');
       var scrollPosition = html.data('scroll-position');
