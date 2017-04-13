@@ -1,7 +1,14 @@
 $(document).ready(function(){
   var open = false;
 
+  $(window).resize(function(){
+    if( window.innerWidth > 689){
+      $('.nav-item a').css('display', 'block');
+    }
+  });
+
   $('.nav-item a').on('click', function(e){
+    // console.log('lolwat');
     if(window.innerWidth < 690){
       $('.nav-item a').css('display', 'none');
     }
@@ -18,7 +25,7 @@ $(document).ready(function(){
       $('.nav-item a').css('display', 'block');
 
       open = true;
-      console.log(open);
+      console.log('Is the burger open? ' + open);
       return;
     }
 
@@ -28,17 +35,10 @@ $(document).ready(function(){
       $('.nav-item a').css('display', 'none');
 
       open = false;
-      console.log(open);
+      console.log('Is the burger open? ' + open);
       return;
     }
   });
-
-  if(open === false && window.innerWidth > 690){
-    $(window).resize(function(){
-      $('.nav-item a').css('display', 'block');
-    });
-  }
-
 });
 
 function bindScroll(){

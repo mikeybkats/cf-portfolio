@@ -47,7 +47,7 @@ Post.fetchAll = function() {
   else{
     $.getJSON('data/posts.json', function( postsJSON, textStatus, jqXHR){
       jqXHR.getResponseHeader('etag');
-      console.log(jqXHR.getResponseHeader('etag'));
+      // console.log(jqXHR.getResponseHeader('etag'));
       Post.loadAll(postsJSON);
       localStorage.setItem('posts', JSON.stringify(postsJSON));
       postsViewer.renderToPage();
