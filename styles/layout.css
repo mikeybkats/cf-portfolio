@@ -121,10 +121,7 @@ section.about-section {
   .nav-title {
     float: right;
     width: 100%;
-    margin-right: 5%; }
-
-  main {
-    margin-top: 100px; } }
+    margin-right: 5%; } }
 @media screen and (min-width: 860px) {
   main {
     margin-top: 0px; }
