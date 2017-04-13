@@ -168,7 +168,10 @@ section.about-section {
 
 
 @media screen and (min-width:860px){
-
+  .projects-div {
+    background-color: #EBEBEC;
+  }
+  
   .contact-info-box {
     display: flex;
     flex-direction: row;;
