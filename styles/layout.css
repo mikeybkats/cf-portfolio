@@ -121,10 +121,7 @@ section.about-section {
   .nav-title {
     float: right;
     width: 100%;
-    margin-right: 5%; }
-
-  nav.main-nav {
-    margin-bottom: 90px; } }
+    margin-right: 5%; } }
 @media screen and (min-width: 860px) {
   .projects-div {
     background-color: #EBEBEC; }
@@ -153,6 +150,9 @@ section.about-section {
     height: 60px;
     margin-top: 0px;
     display: none; }
+
+  nav.main-nav {
+    margin-bottom: 90px; }
 
   .image-box {
     margin: 0px auto;

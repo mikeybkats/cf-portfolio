@@ -158,15 +158,10 @@ section.about-section {
 
 /* -------------media queries---------- */
 @media screen and (min-width: 660px){
-
   .nav-title {
     float: right;
     width: 100%;
     margin-right: 5%;
-  }
-
-  nav.main-nav {
-    margin-bottom: 90px;
   }
 }
 
@@ -206,7 +201,10 @@ section.about-section {
     display: none;
   }
 
-  
+  nav.main-nav {
+    margin-bottom: 90px;
+  }
+
   .image-box {
     margin: 0px auto;
     display: block;
