@@ -35,7 +35,7 @@
 
 .nav-item a {
     color: white;
-    display: block;
+    display: none;
     padding: 1em;
     font-size: 1.2em;
     text-decoration: none;
@@ -140,7 +140,7 @@ body {
 
   .nav-item a {
     /* non-critical appearance styles */
-    display: flex;
+    display: block;
     padding: 1em;
     color: white;
     font-size: 1.2em;

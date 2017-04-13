@@ -155,17 +155,20 @@ section.about-section {
   margin: 0px;
 }
 
+
 /* -------------media queries---------- */
 @media screen and (min-width: 660px){
+
   .nav-title {
     float: right;
     width: 100%;
     margin-right: 5%;
-  }  
+  }
 }
 
 
 @media screen and (min-width:860px){
+
   .contact-info-box {
     display: flex;
     flex-direction: row;;
