@@ -35,7 +35,6 @@ $(document).ready(function(){
 
   if(open === false && window.innerWidth > 690){
     $(window).resize(function(){
-      console.log('lolwat');
       $('.nav-item a').css('display', 'block');
     });
   }
