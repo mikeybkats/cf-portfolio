@@ -164,14 +164,17 @@ section.about-section {
     margin-right: 5%;
   }
 
-  // nav.main-nav {
-  //   margin-bottom: 90px;
-  // }
-
+  main {
+      margin-top: 100px;
+  }
 }
 
 
 @media screen and (min-width:860px){
+  main {
+      margin-top: 0px;
+  }
+  
   .projects-div {
     background-color: #EBEBEC;
   }

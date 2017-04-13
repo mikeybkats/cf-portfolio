@@ -2,6 +2,9 @@ $(document).ready(function(){
   var open = false;
 
   $('.nav-item a').on('click', function(e){
+    if(window.innerWidth < 690){
+      $('.nav-item a').css('display', 'none');
+    }
     open = false;
     unbindScroll();
   });
@@ -30,7 +33,7 @@ $(document).ready(function(){
     }
   });
 
-  if(open === false && window.innerWidth > 660){
+  if(open === false && window.innerWidth > 690){
     $(window).resize(function(){
       console.log('lolwat');
       $('.nav-item a').css('display', 'block');
