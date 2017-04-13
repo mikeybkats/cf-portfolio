@@ -1,8 +1,9 @@
 $(document).ready(function(){
   var open = false;
-
+  $('.nav-item a').on('click', function(e){
+    open = false;
+  });
   $('.icon-menu').not('.nav-item a').on('click',function(e){
-    console.log('lolwat');
     $('.nav-item a').css('display', 'block');
 
     if(open === false){
@@ -37,7 +38,6 @@ $(document).ready(function(){
   });
 
   if(open === false){
-    // $('.nav-item a').css('display', 'block');
     $(window).resize(function(){
       console.log('lolwat');
       $('.nav-item a').css('display', 'block');
