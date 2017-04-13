@@ -30,7 +30,7 @@ $(document).ready(function(){
     }
   });
 
-  if(open === false){
+  if(open === false && window.innerWidth > 660){
     $(window).resize(function(){
       console.log('lolwat');
       $('.nav-item a').css('display', 'block');
