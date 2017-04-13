@@ -12,8 +12,6 @@ $(document).ready(function(){
     if(open === false){
       bindScroll();
 
-      $('html, body').on('touchmove', function(e){e.preventDefault();});
-
       $('.nav-item a').css('display', 'block');
 
       open = true;
@@ -22,9 +20,9 @@ $(document).ready(function(){
     }
 
     if(open === true){
-      $('html, body').unbind('touchmove').unbind();
-      $('.nav-item a').css('display', 'none');
       unbindScroll();
+
+      $('.nav-item a').css('display', 'none');
 
       open = false;
       console.log(open);
@@ -42,6 +40,7 @@ $(document).ready(function(){
 });
 
 function bindScroll(){
+  $('html, body').on('touchmove', function(e){e.preventDefault();});
   var scrollPosition = [
     self.pageXOffset || document.documentElement.scrollLeft || document.body.scrollLeft,
     self.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop
@@ -54,6 +53,7 @@ function bindScroll(){
 }
 
 function unbindScroll(){
+  $('html, body').unbind('touchmove').unbind();
   var html = $('html');
   var scrollPosition = html.data('scroll-position');
   html.css('overflow', html.data('previous-overflow'));
