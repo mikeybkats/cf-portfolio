@@ -164,6 +164,10 @@ section.about-section {
     width: 100%;
     margin-right: 5%;
   }
+
+  nav.main-nav {
+    margin-bottom: 90px;
+  }
 }
 
 
@@ -171,7 +175,7 @@ section.about-section {
   .projects-div {
     background-color: #EBEBEC;
   }
-  
+
   .contact-info-box {
     display: flex;
     flex-direction: row;;
@@ -202,10 +206,7 @@ section.about-section {
     display: none;
   }
 
-  nav.main-nav {
-    margin-bottom: 90px;
-  }
-
+  
   .image-box {
     margin: 0px auto;
     display: block;
