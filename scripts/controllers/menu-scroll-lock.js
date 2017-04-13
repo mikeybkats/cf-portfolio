@@ -1,11 +1,13 @@
 $(document).ready(function(){
   var open = false;
 
-  $('.nav-trigger').on('click',function(e){
+  $('input.nav-trigger').on('click',function(e){
+    console.log('lolwat');
+    $('.nav-item a').css('display', 'block');
+
     if(open === false){
       $('html, body').on('touchmove', function(e){e.preventDefault();});
       $('.nav-item a').css('display', 'block');
-
       var scrollPosition = [
         self.pageXOffset || document.documentElement.scrollLeft || document.body.scrollLeft,
         self.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop
@@ -19,9 +21,10 @@ $(document).ready(function(){
       console.log(open);
       return;
     }
+
     if(open === true){
       $('html, body').unbind('touchmove').unbind();
-      $('.nav-item a').css('display', 'block');
+      $('.nav-item a').css('display', 'none');
 
       var html = $('html');
       var scrollPosition = html.data('scroll-position');
@@ -32,10 +35,12 @@ $(document).ready(function(){
       return;
     }
   });
-  if(open === true){
-    $(document).on('click', '.main *', function(){
+
+  if(open === false){
+    $(window).resize(function(){
       console.log('lolwat');
-      $('.nav-trigger').click();
+      $('.nav-item a').css('display', 'block');
     });
   }
+
 });
