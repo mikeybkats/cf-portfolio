@@ -117,11 +117,14 @@ section.about-section {
   margin: 0px; }
 
 /* -------------media queries---------- */
-@media screen and (min-width: 660px) {
+@media screen and (min-width: 690px) {
   .nav-title {
     float: right;
     width: 100%;
-    margin-right: 5%; } }
+    margin-right: 5%; }
+
+  nav.main-nav {
+    margin-bottom: 90px; } }
 @media screen and (min-width: 860px) {
   .projects-div {
     background-color: #EBEBEC; }
