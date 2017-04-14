@@ -40,7 +40,10 @@ nav.mobile-nav {
     nav.mobile-nav .nav-links-container .nav-item {
       padding: 12px 0px; }
       nav.mobile-nav .nav-links-container .nav-item a {
+        color: black;
         font-size: 1.5em; }
+      nav.mobile-nav .nav-links-container .nav-item.active a {
+        color: RGBA(239, 155, 70, 1); }
   nav.mobile-nav .mobile-navigation-links {
     height: 80%;
     display: flex;
