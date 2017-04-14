@@ -41,6 +41,9 @@ li.social-item {
 a {
   text-decoration: none; }
 
+a:visited {
+  color: inherit; }
+
 .social-item a {
   color: gray; }
 
@@ -77,9 +80,12 @@ h3 {
 h3.page-title {
   font-family: Roboto Mono;
   color: white;
-  float: right;
-  margin-right: 5%;
-  /*line-height: 16px;*/ }
+  float: left;
+  margin-left: 5%; }
+  @media screen and (min-width: 690px) {
+    h3.page-title {
+      float: right;
+      margin-right: 5%; } }
 
 h4 {
   font-family: Open Sans; }

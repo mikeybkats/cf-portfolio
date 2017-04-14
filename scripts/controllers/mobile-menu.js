@@ -1,44 +1,25 @@
 $(document).ready(function(){
   var open = false;
-
-  $(window).resize(function(){
-    if( window.innerWidth > 689){
-      $('.nav-item a').css('display', 'block');
-    }
-  });
-
-  $('.nav-item a').on('click', function(e){
-    // console.log('lolwat');
-    if(window.innerWidth < 690){
-      $('.nav-item a').css('display', 'none');
-    }
-    open = false;
-    unbindScroll();
-  });
-
-  $('.icon-menu').not('.nav-item a').on('click',function(e){
-    $('.nav-item a').css('display', 'block');
-
-    if(open === false){
+  // toggle menu on hamburger open / close
+  $('.hamburger').on('click', function(e){
+    $('.nav-links-container').toggleClass('active');
+    if( open === false){
       bindScroll();
-
-      $('.nav-item a').css('display', 'block');
-
       open = true;
-      console.log('Is the burger open? ' + open);
-      return;
-    }
-
-    if(open === true){
+    } else {
       unbindScroll();
-
-      $('.nav-item a').css('display', 'none');
-
       open = false;
-      console.log('Is the burger open? ' + open);
       return;
     }
   });
+
+  // toggle menu on link click
+  $('.nav-item a').on('click', function(e){
+    $('.nav-links-container').toggleClass('active');
+    unbindScroll();
+    open = false;
+  });
+
 });
 
 function bindScroll(){
