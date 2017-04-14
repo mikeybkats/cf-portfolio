@@ -16,7 +16,7 @@ nav.mobile-nav {
   z-index: 500;
   position: fixed;
   background-color: RGBA(106, 105, 101, 1);
-  height: 54px;
+  height: 58px;
   width: 100vw;
   top: 0px;
   right: 0;
@@ -36,7 +36,7 @@ nav.mobile-nav {
     transition: all 500ms cubic-bezier(0.215, 0.61, 0.355, 1); }
     nav.mobile-nav .nav-links-container.active {
       transition: all 500ms cubic-bezier(0.215, 0.61, 0.355, 1);
-      top: 54px; }
+      top: 58px; }
     nav.mobile-nav .nav-links-container .nav-item {
       padding: 12px 0px; }
       nav.mobile-nav .nav-links-container .nav-item a {
@@ -52,7 +52,8 @@ nav.mobile-nav {
     display: block;
     position: absolute;
     z-index: 600;
-    min-width: 150px; }
+    min-width: 150px;
+    margin-left: 15px; }
 
 .hamburger-container .hamburger {
   z-index: 600;
